@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name — Portfolio</title>
+<style>
+  :root {
+    --bg: #4a6163;
+    --text: #f2f2f2;
+    --muted: #9a9a9a;
+    --accent: #ef7429;
+    --border: #2a2a2a;
+    --max-width: 1000px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding:60px 24px;
+  }
+
+  /* Header */
+  .profile {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 72px;
+  }
+
+  .avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    background: #ef7429;
+  }
+
+  .name {
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    color: var(--accent);
+    line-height: 1.05;
+    margin-bottom: 10px;
+  }
+
+  .role {
+    font-size: 0.95rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #ef7429;
+    margin-bottom: 14px;
+  }
+
+  .bio {
+    color: var(--muted);
+    font-size: 0.95rem;
+    max-width: 480px;
+    margin-bottom: 18px;
+  }
+
+  /* Two column layout */
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+  }
+
+  .col h2 {
+    color: var(--accent);
+    font-size: 1.1rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+
+  .block {
+    margin-bottom: 40px;
+  }
+  .block:last-child { margin-bottom: 0; }
+
+  /* Expertise list */
+  ul.expertise {
+    list-style: none;
+  }
+  ul.expertise li {
+    color: var(--muted);
+    font-size: 0.95rem;
+    padding: 6px 0;
+    position: relative;
+    padding-left: 18px;
+  }
+  ul.expertise li::before {
+    content: "•";
+    color: var(--accent);
+    position: absolute;
+    left: 0;
+  }
+
+  
+  .entry {
+    margin-bottom: 28px;
+  }
+  .entry:last-child { margin-bottom: 0; }
+
+  .entry .date {
+    color: var(--muted);
+    font-size: 0.85rem;
+    margin-bottom: 4px;
+  }
+
+  .entry h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 2px;
+  }
+
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 32px 24px;
+    color: var(--muted);
+    font-size: 0.85rem;
+    text-align: center;
+  }
+
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <div class="profile">
+    <img class="avatar" src="ProfileImage.png" alt="Your photo">
+    <div>
+      
+      <div class="name"> Rowel Dulu</div>
+      <div class="Contacts"> Email: roweldulu2025@gmail.com <br> Contact Number: 09942217678
+      </div>
+      <p class="bio">
+       To be employed in a highly – esteemed company that provides continuous personal and career growth where I can share and develop my skills.
+      </p>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="col">
+
+      <div class="block">
+        <h2>Expertise</h2>
+        <ul class="Personal Information">
+          <li>Age: 20</li>
+          <li>Birthdate: 08/18/2005</li>
+          <li>Height: 5'6</li>
+          <li>Weight: 65Kg</li>
+          <li>Place of birth: Hospital Of Angeles</li>
+        </ul>
+      </div>
+
+      <div class="block">
+        <h2>Reference</h2>
+        <div class="entry">
+          <h3>Glen Tiongco  </h3>
+          <p>Brgy. Captain</p>
+        </div>
+      </div>
+
+      <div class="block">
+        <h2>Education</h2>
+        <div class="entry">
+          <div class="date">2011 – 2017</div>
+          <h3>Tinajero Elementary School</h3>
+          <div class="subtitle">Primary</div>
+          <div class="date">2017 – 2021</div>
+          <h3>Tinajero National HighSchool - Main</h3>
+          <div class="subtitle">Junior Secondary</div>
+          <div class="date">2021 – 2024</div>
+          <h3>Madapdap Rest. Senior HighSchool</h3>
+          <div class="subtitle">Senior Secondary</div>
+          <div class="date">2024 – Current</div>
+          <h3>Mabalacat City College</h3>
+          <div class="subtitle">Tertiary</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col">
+
+      <div class="block">
+        <h2>Experience</h2>
+        <div class="entry">
+          <div class="date">2023 – 2024</div>
+          <h3>Cyberlab Main Branch</h3>
+          <div class="subtitle">Priter Operator / Salesman</div>
+          <p>It is a Small Printig shop here in my Barangay.</p>
+        </div>
+        
+      </div>
+
+      <div class="block">
+        <h2>Awards</h2>
+        <div class="entry">
+          <div class="date">2025 - 2026</div>
+          <h3>NET ACAD CERTIFICATES</h3>
+          <p>CCNA: Introduction to Networks || IT Essential.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  &copy; <span id="year"></span> Your Name. All rights reserved.
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
